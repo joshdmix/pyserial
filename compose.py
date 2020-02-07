@@ -1,20 +1,7 @@
 from twelve_tone.composer import Composer
-from mido import Message, MidiFile, MidiTrack
-from miditime.miditime import MIDITime
 import numpy as np
 import random
 import pretty_midi
-
-
-mid = MidiFile()
-track = MidiTrack()
-mid.tracks.append(track)
-
-midinotes = []
-offset = 60
-attack = 200
-beats = 1
-
 
 main_list = []
 c = Composer()
