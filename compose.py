@@ -36,7 +36,7 @@ end = .5
 for note_name in numbered_list:
     note_number = pretty_midi.note_name_to_number(note_name)
     note = pretty_midi.Note(
-        velocity=100, pitch=note_number, start=start, end=end)
+        velocity=random.randint(0, 100), pitch=note_number, start=start, end=end)
     compo_c.notes.append(note)
     start = random.randint(0, 1000) * 0.1
     end = random.randint(1, 20) * 0.1
